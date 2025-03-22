@@ -90,7 +90,8 @@ public class Menu {
                         System.out.println("*/ 1 - Cadastrar Retângulo /*");
                         System.out.println("*/ 2 - Calcular área /*");
                         System.out.println("*/ 3 - Calcular perimetro /*");
-                        System.out.println("*/ 4 -       Sair         /*");
+                        System.out.println("*  4 -/Definir o tipo do Retangulo/*");
+                        System.out.println("*/ 5 -       Sair         /*");
                         System.out.println("Informe a opção desejada: ");
                         int optionRetangulo = scanner.nextInt();
 
@@ -113,6 +114,13 @@ public class Menu {
                                 }
                                 break;
                             case 4:
+                                if (validaCadastroRetangulo) {
+                                    retangulo.definirQuadrado();
+                                }else {
+                                    System.out.println("Cadastre um retangulo");
+                                }
+                                break;
+                            case 5:
                                 System.out.println("Saindo do retângulo");
                                 exitRetangulo = true;
                                 break;

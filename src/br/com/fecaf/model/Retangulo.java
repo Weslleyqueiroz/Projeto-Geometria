@@ -32,7 +32,6 @@ public class Retangulo {
         System.out.println("O perimetro é : " + perimetro);
     }
     public void definirQuadrado(){
-
         if (lado1==lado2){
             System.out.println("é um quadrado");
         }else {
